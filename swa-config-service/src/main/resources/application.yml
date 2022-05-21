@@ -1,0 +1,9 @@
+#This is for local configuration
+# spring.profiles.active=native
+#This is for git configuration
+
+server.port: 8003
+spring.cloud.config.server.git:
+      uri: https://github.com/abenitrust/swa_config
+      clone-on-start: true
+      default-label: main
